@@ -7,7 +7,7 @@ stop.setAttribute('disabled', '');
 function onClick() {
   start.setAttribute('disabled', '');
   stop.removeAttribute('disabled');
-  autoSwitch = setInterval(() => {
+  const autoSwitch = setInterval(() => {
     body.style.backgroundColor = getRandomHexColor();
   }, 1000);
   stop.addEventListener('click', onStop);
